@@ -1,0 +1,22 @@
+{
+  "name": "my-nodejs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ityuhui/my-nodejs-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ityuhui/my-nodejs-starter/issues"
+  },
+  "homepage": "https://github.com/ityuhui/my-nodejs-starter#readme",
+  "devDependencies": {
+    "@types/node": "^13.13.5"
+  }
+}
