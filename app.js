@@ -7,10 +7,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const http = __importStar(require("http"));
-let server;
-server = http.createServer(function (request, response) {
-    response.writeHead(200, { "Content-Type": "text/plain" });
-    response.write("Hello World@");
-    response.end();
-}).listen(3000);
+const React = __importStar(require("react"));
+const ReactDOM = __importStar(require("react-dom"));
+ReactDOM.render(React.createElement("div", null,
+    React.createElement("h1", null, "Hello, Welcome to the first page")), document.getElementById("root"));
