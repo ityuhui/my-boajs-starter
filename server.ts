@@ -1,8 +1,19 @@
-import * as http from "http";
+import * as Koa from 'koa';
+import * as Router from 'koa-router';
+import * as bodyParser from "koa-bodyparser";
 
-let server:http.Server;
-server=http.createServer(function(request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write("Hello World@");
-    response.end();
-  }).listen(3000);
+const app = new Koa();
+const router = new Router();
+
+router.get('/*', async (ctx) => {
+    ctx.body = 'Hello World!';
+});
+
+app
+  .use(bodyParser())
+  .use(router.routes())
+  .use(router.allowedMethods());
+
+app.listen(3000);
+
+console.log('Server running on port 3000');
