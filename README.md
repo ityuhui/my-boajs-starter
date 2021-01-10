@@ -1,4 +1,4 @@
-# my-nodejs-starter
+# my-typescript-starter
 
 nodejs with typescript
 
